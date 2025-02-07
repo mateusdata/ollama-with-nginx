@@ -9,5 +9,5 @@ sleep 5
 # Baixa o modelo desejado
 ollama pull deepseek-coder
 
-# Mantém o container rodando
-tail -f /dev/null
+# Inicia o NGINX em foreground (isso mantém o container ativo)
+nginx -g "daemon off;"
